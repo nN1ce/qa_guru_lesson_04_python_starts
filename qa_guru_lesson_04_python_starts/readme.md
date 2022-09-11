@@ -9,3 +9,4 @@
 - Функции
 - Условия
 - Циклы
+# https://faker.readthedocs.io/en/master/ бибилиотека для генерации
