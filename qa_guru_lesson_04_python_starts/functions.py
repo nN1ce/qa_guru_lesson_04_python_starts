@@ -1,19 +1,21 @@
 
 # Объявляем функции и аргументы
 
-def func():
+def func():      # фунуция
     print("I'm called")
 
-func()
-
-
+func() # I'm called (вызов функции )
+func() # I'm called
+# exit(0) - завершенние кода до этого момента
 def print_message(message, end):
     print(message, end=end)
 
 
 print_message("hello", end=", ")
 print_message(message="world", end=".")
-print()
+print()  # hello, world.
+
+# exit(0)
 # Возвращаем значение
 
 def lower_string(string: str):
@@ -23,22 +25,22 @@ def upper_and_lower_string(string: str):
     return string.upper(), string.lower()
 
 
-print(lower_string("CAPITALIZED WORDS"))
-print(lower_string("HelO WoOoOrlD!"))
+print(lower_string("CAPITALIZED WORDS")) # capitalized words
+print(lower_string("HelO WoOoOrlD!")) # helo woooorld!
 
-print(upper_and_lower_string("HelO WoOoOrlD!"))
+print(upper_and_lower_string("HelO WoOoOrlD!")) # ('HELO WOOOORLD!', 'helo woooorld!')
 
 
 # Переменное количество аргументов
 
 
 def print_all_arguments(*args):
-    print(args)
+    print(*args) # 1 2 3 4 5 6 7 8, если print(args) => (1, 2, 3, 4, 5, 6, 7, 8)
 
 
 print_all_arguments(1, 2, 3, 4, 5, 6, 7, 8)
 
-
+# exit(0)
 def func_with_kwargs(**kwargs):
     print(kwargs)
 
@@ -96,4 +98,6 @@ users = [
     {"name": "Maria", "age": 18},
 ]
 
-print(sorted(users, key=by_age))
+print(sorted(users, key=by_age)) # [{'name': 'Stanislav', 'age': 15}, {'name': 'Maria', 'age': 18}, {'name': 'Sergey', 'age': 24}, {'name': 'Oleg', 'age': 32}, {'name': 'Olga', 'age': 45}]
+print(max(users, key=by_age)) # {'name': 'Olga', 'age': 45}
+print(min(users, key=by_age)) # {'name': 'Stanislav', 'age': 15}

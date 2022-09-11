@@ -3,8 +3,8 @@
 
 i = 0
 
-while i < 10:
-    # print("hello! " + str(i))
+while i < 10: # пока i меньше 10 будет выпоняться цикл
+    print("hello! " + str(i)) # 10 раз вывелся "hello! num + 1"
     # i = i + 1
     i += 1
 

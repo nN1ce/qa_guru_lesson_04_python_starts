@@ -46,3 +46,5 @@ print("%s %s %s" % (first, second, third.title())) # first second Third
 
 str(52132) # '52132'
 int("1241241") # 1241241
+
+print("first second third".split()) # ['first', 'second', 'third']

@@ -7,7 +7,7 @@ n = None
 
 # if/elif/else
 
-a = 10
+a = 6
 
 if a > 5 or a < 0:
     print("Правда!")
