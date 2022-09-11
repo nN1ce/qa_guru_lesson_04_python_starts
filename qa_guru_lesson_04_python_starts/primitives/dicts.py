@@ -8,14 +8,14 @@ d = {
     (1, 2, 3): "fafafa"
 }
 
-print(d[(1, 2, 3)])
+print(d[(1, 2, 3)]) # fafafa
 
-print(d["key"])
+print(d["key"]) # value
 
 # Функции словарей
 
-print(list(d.keys()))
-print(list(d.values()))
-print(list(d.items()))
+print(list(d.keys())) # ['key', 123, 10, (1, 2, 3)]
+print(list(d.values())) # ['value', 123, {'another': 'first'}, 'fafafa']
+print(list(d.items())) # [('key', 'value'), (123, 123), (10, {'another': 'first'}), ((1, 2, 3), 'fafafa')]
 
-print(d.get("browser", "chrome"))
+print(d.get("browser", "chrome")) # chrome
