@@ -20,3 +20,10 @@ def find_registration_button_on_login_page(page_url, button_text):
 open_browser('Chrome или Firefox')
 go_to_companyname_homepage('https://qa.guru/python')
 find_registration_button_on_login_page('https://qa.guru/python', "\"Знак войти\"(XPath'[href=\"https://qa.guru/cms/system/login\"]')")
+
+
+"""Open browser Chrome или Firefox
+Go to companyname homepage https://qa.guru/python
+Find registration button on login page https://qa.guru/python "Знак войти"(XPath'[href="https://qa.guru/cms/system/login"]')
+
+Process finished with exit code 0"""
